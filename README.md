@@ -2,4 +2,4 @@
 
 this project is my attemp to learn constraintlayout and motionlayout
 the goal was recreating this design and add some animation to it
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/mejdi14/music-app-design/blob/master/images/preview.png)
