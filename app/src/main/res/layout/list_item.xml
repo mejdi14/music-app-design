@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="#16053D"
+    android:layout_marginBottom="2dp">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:scaleType="centerCrop"
+        android:src="@drawable/head"
+        android:padding="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/number"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.15"
+
+        />
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="01"
+        android:textColor="#4C4164"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.12"
+
+        />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:layout_marginBottom="32dp"
+        android:gravity="bottom|center_horizontal"
+        android:text="title"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/discription"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/imageView"
+        app:layout_constraintWidth_percent="0.58" />
+
+    <TextView
+        android:id="@+id/discription"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="top|center_horizontal"
+        android:text="discription"
+        android:textColor="#4C4164"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/imageView"
+
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintWidth_percent="0.58" />
+
+    <ImageView
+        android:id="@+id/favorite"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="29dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/hart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/title"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.15"
+
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
