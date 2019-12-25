@@ -7,22 +7,26 @@
     android:background="#16053D"
     android:layout_marginBottom="2dp">
 
-
-    <ImageView
-        android:id="@+id/imageView"
+    <com.example.myapplication.helpers.SquareFrameLayout
+        android:id="@+id/square"
         android:layout_width="0dp"
         android:layout_height="0dp"
-
-        android:scaleType="centerCrop"
-        android:src="@drawable/head"
-        android:padding="14dp"
+        android:layout_margin="14dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/number"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image"
+
+
         app:layout_constraintWidth_percent="0.15"
 
         />
-
+    </com.example.myapplication.helpers.SquareFrameLayout>
     <TextView
         android:id="@+id/number"
         android:layout_width="0dp"
@@ -32,7 +36,7 @@
         android:textColor="#4C4164"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/imageView"
+        app:layout_constraintRight_toLeftOf="@id/square"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintWidth_percent="0.12"
@@ -48,14 +52,14 @@
         android:gravity="bottom|center_horizontal"
         android:text="title"
         android:textColor="#FFFFFF"
-        android:textSize="20dp"
+        android:textSize="18dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintBottom_toTopOf="@id/discription"
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent="0.5"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@id/imageView"
+        app:layout_constraintStart_toEndOf="@id/square"
         app:layout_constraintWidth_percent="0.58" />
 
     <TextView
@@ -65,11 +69,11 @@
         android:gravity="top|center_horizontal"
         android:text="discription"
         android:textColor="#4C4164"
-        android:textSize="16dp"
+        android:textSize="14dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent="0.5"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@id/imageView"
+        app:layout_constraintStart_toEndOf="@id/square"
 
         app:layout_constraintTop_toBottomOf="@id/title"
         app:layout_constraintWidth_percent="0.58" />

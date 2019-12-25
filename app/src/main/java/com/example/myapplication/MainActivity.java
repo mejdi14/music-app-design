@@ -1,9 +1,15 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
 import android.widget.SearchView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.app.ActivityOptionsCompat;
+import androidx.core.util.Pair;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -45,6 +51,33 @@ public class MainActivity extends AppCompatActivity {
         songs.add(new Song(8,"Gorillaz ","DARE ",R.drawable.head));
         imageAdapter.submitList(songs);
         imageAdapter.notifyDataSetChanged();
+
+        imageAdapter.setOnItemClickListener(new ImageAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(Song note,View view) {
+
+                Log.d("passanger", "onItemClick: ");
+                Intent intent = new Intent(MainActivity.this, DetailsActivity.class);
+                intent.putExtra(DetailsActivity.EXTRA_PARAM_ID, note.getNumber());
+
+                // BEGIN_INCLUDE(start_activity)
+                /*
+                 * Now create an {@link android.app.ActivityOptions} instance using the
+                 * {@link ActivityOptionsCompat#makeSceneTransitionAnimation(Activity, Pair[])} factory
+                 * method.
+                 */
+                @SuppressWarnings("unchecked")
+                ActivityOptionsCompat activityOptions = ActivityOptionsCompat.makeSceneTransitionAnimation(
+                        MainActivity.this,
+
+                        new Pair<>(view.findViewById(R.id.imageView),
+                                DetailsActivity.VIEW_NAME_HEADER_IMAGE),
+                        new Pair<>(view.findViewById(R.id.title),
+                                DetailsActivity.VIEW_NAME_HEADER_TITLE));
+
+                ActivityCompat.startActivity(MainActivity.this, intent, activityOptions.toBundle());
+            }
+        });
     }
 
     private void setUpSearchViewDesign() {

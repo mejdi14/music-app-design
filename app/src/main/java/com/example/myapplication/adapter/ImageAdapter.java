@@ -1,5 +1,6 @@
 package com.example.myapplication.adapter;
 
+import android.graphics.Bitmap;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,6 +22,8 @@ import java.util.List;
 public class ImageAdapter extends ListAdapter<Song, ImageAdapter.NoteHolder> {
     private OnItemClickListener listener;
     private List<Song> songs = new ArrayList<>();
+    Bitmap ImageBit;
+    float ImageRadius = 40.0f;
     public ImageAdapter() {
         super(DIFF_CALLBACK);
     }
@@ -50,7 +53,9 @@ public class ImageAdapter extends ListAdapter<Song, ImageAdapter.NoteHolder> {
         holder.title.setText(currentSong.getTitle());
         holder.discription.setText(currentSong.getSubtitle());
         holder.number.setText(currentSong.getNumber()+"");
-        holder.image.setImageResource(currentSong.getImage());
+
+
+       // holder.image.setImageResource(currentSong.getImage());
     }
 
 
@@ -68,7 +73,7 @@ public class ImageAdapter extends ListAdapter<Song, ImageAdapter.NoteHolder> {
         private TextView number;
         private ImageView image;
 
-        public NoteHolder(View itemView) {
+        public NoteHolder(final View itemView) {
             super(itemView);
             title = itemView.findViewById(R.id.title);
             discription = itemView.findViewById(R.id.discription);
@@ -78,14 +83,17 @@ public class ImageAdapter extends ListAdapter<Song, ImageAdapter.NoteHolder> {
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-
+                    int position = getAdapterPosition();
+                    if (listener != null && position != RecyclerView.NO_POSITION) {
+                        listener.onItemClick(getItem(position),itemView);
+                    }
                 }
             });
         }
     }
 
     public interface OnItemClickListener {
-        void onItemClick(Song note);
+        void onItemClick(Song note,View view);
     }
 
     public void setOnItemClickListener(OnItemClickListener listener) {
