@@ -12,12 +12,21 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/image_card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
 
+            android:visibility="visible"
+            app:cardCornerRadius="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
         <ImageView
             android:id="@+id/imageview_header"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop" />
-
+        </androidx.cardview.widget.CardView>
     </com.example.myapplication.helpers.SquareFrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

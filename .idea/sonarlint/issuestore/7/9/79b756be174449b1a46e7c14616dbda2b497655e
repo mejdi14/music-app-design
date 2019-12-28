@@ -1,8 +1,4 @@
 
 zsquid:S00116"VRename this field "ImageRadius" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—¦âÓøÿÿÿÿ8İ‚¸íó-
-hsquid:CommentedOutCodeLine9"<This block of commented-out lines of code should be removed.(î78Æõ¿íó-
-Hsquid:S1068",Remove this unused "listener" private field.(ø‘ìäúÿÿÿÿ
-Gsquid:S1068I")Remove this unused "image" private field.(İÈ½8®´Ìíó-
-wsquid:S00116"SRename this field "ImageBit" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆ¯¾Úùÿÿÿÿ8İ‚¸íó-
-ssquid:S1450"WRemove the "listener" field and declare it as a local variable in the relevant methods.(ø‘ìäúÿÿÿÿ
 @squid:S1068")Remove this unused "songs" private field.(ªçœë
+wsquid:S00116"SRename this field "ImageBit" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆ¯¾Úùÿÿÿÿ8İ‚¸íó-

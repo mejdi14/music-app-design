@@ -55,7 +55,7 @@ public class ImageAdapter extends ListAdapter<Song, ImageAdapter.NoteHolder> {
         holder.number.setText(currentSong.getNumber()+"");
 
 
-       // holder.image.setImageResource(currentSong.getImage());
+        holder.image.setImageResource(currentSong.getImage());
     }
 
 

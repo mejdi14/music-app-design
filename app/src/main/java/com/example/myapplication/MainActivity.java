@@ -40,15 +40,9 @@ public class MainActivity extends AppCompatActivity {
         ImageAdapter imageAdapter = new ImageAdapter();
         imageRecyclerview.setAdapter(imageAdapter);
         List<Song> songs = new ArrayList<>();
-        songs.add(new Song(1,"Kavinsky ","Nightcall Drive",R.drawable.image1));
-        songs.add(new Song(2,"BEACH HOUSE","MYTH",R.drawable.image3));
-        songs.add(new Song(4,"Pink Floyd","Wish You Were Here",R.drawable.head));
-        songs.add(new Song(6,"Lykke Li","I Follow Rivers",R.drawable.image2));
-        songs.add(new Song(9,"AC/DC","Thunderstruck ",R.drawable.image1));
-        songs.add(new Song(3,"Cigarettes After Sex ","Nothing's Gonna Hurt You",R.drawable.image2));
-        songs.add(new Song(5,"Lana Del Rey","Born To Die",R.drawable.image1));
-        songs.add(new Song(7,"Foster The People","Pumped up Kicks",R.drawable.image3));
-        songs.add(new Song(8,"Gorillaz ","DARE ",R.drawable.head));
+        for (Song song:Song.ITEMS){
+         songs.add(song);
+        }
         imageAdapter.submitList(songs);
         imageAdapter.notifyDataSetChanged();
 

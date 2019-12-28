@@ -13,7 +13,112 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../MusicPlayer/app/src/main/java/com/ldt/musicr/ui/nowplaying/NowPlayingController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../MusicPlayer/app/src/main/java/com/ldt/musicr/ui/widget/fragmentnavigationcontroller/FragmentNavigationController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../MusicPlayer/app/src/main/res/layout/now_playing_controller.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../animation-samples/ActivitySceneTransitionBasic/app/src/main/java/com/example/android/activityscenetransitionbasic/MainActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../animation-samples/ProARM/app/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../animation-samples/ProARM/app/src/main/java/asm/asmtunis/com/proarm/MainActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../animation-samples/ProARM/app/src/main/java/asm/asmtunis/com/proarm/data/RemoteCallback.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../animation-samples/ProARM/app/src/main/java/asm/asmtunis/com/proarm/data/ServiceFactory.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../animation-samples/ProARM/app/src/main/java/asm/asmtunis/com/proarm/ui/activity/MainActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../animation-samples/ProARM/app/src/main/java/asm/asmtunis/com/proarm/ui/fragment/ClientFragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../animation-samples/ProARM/app/src/main/java/asm/asmtunis/com/proarm/ui/fragment/PagerFragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../animation-samples/ProARM/app/src/main/java/asm/asmtunis/com/proarm/ui/fragment/SettingFragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../animation-samples/ProARM/app/src/main/java/asm/asmtunis/com/proarm/ui/fragment/SplashScreen.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../animation-samples/ProARM/app/src/main/java/asm/asmtunis/com/proarm/ui/fragment/VisiteFragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../animation-samples/ProARM/app/src/main/res/layout/activity_main.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../animation-samples/ProARM/app/src/main/res/layout/fragment_client.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../animation-samples/ProARM/app/src/main/res/layout/fragment_pager.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../animation-samples/ProARM/app/src/main/res/layout/fragment_setting.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../animation-samples/ProARM/app/src/main/res/layout/fragment_visite.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../animation-samples/ProARM/app/src/main/res/menu/menu_bottom_navigation.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../animation-samples/ProARM/app/src/main/res/navigation/nav_graph.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../animation-samples/ProARM/app/src/main/res/values/colors.xml">
           <value>
             <set />
           </value>
@@ -44,6 +149,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/example/myapplication/helpers/ji.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/example/myapplication/models/Song.java">
           <value>
             <set />
           </value>

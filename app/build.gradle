@@ -29,4 +29,5 @@ dependencies {
     androidTestImplementation 'androidx.test:runner:1.1.0'
     androidTestImplementation 'androidx.test:rules:1.1.0'
     implementation 'com.squareup.picasso:picasso:2.4.0'
+    implementation "androidx.cardview:cardview:1.0.0"
 }
