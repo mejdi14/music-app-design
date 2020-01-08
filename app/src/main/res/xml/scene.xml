@@ -46,7 +46,22 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-
+        <Constraint
+            android:id="@+id/discription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recommended"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:gravity="left"
+            android:paddingLeft="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/viewStub" >
+            <CustomAttribute
+                app:attributeName="textSize"
+                app:customFloatValue="25" />
+        </Constraint>
 
 
     </ConstraintSet>
@@ -74,6 +89,21 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/discription"/>
 
-
+        <Constraint
+            android:id="@+id/discription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recommended"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:paddingLeft="15dp"
+            android:gravity="left"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/viewStub" >
+            <CustomAttribute
+                app:attributeName="textSize"
+                app:customFloatValue="20" />
+        </Constraint>
     </ConstraintSet>
 </MotionScene>

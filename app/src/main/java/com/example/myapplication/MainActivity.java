@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.animation.AnimationUtils;
+import android.view.animation.LayoutAnimationController;
 import android.widget.SearchView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,7 +16,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.myapplication.adapter.ImageAdapter;
-import com.example.myapplication.models.Song;
+import com.example.myapplication.models.Singer;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -39,16 +41,19 @@ public class MainActivity extends AppCompatActivity {
         imageRecyclerview.setHasFixedSize(true);
         ImageAdapter imageAdapter = new ImageAdapter();
         imageRecyclerview.setAdapter(imageAdapter);
-        List<Song> songs = new ArrayList<>();
-        for (Song song:Song.ITEMS){
-         songs.add(song);
+        int resId = R.anim.layout_animation_fall_down;
+        LayoutAnimationController animation = AnimationUtils.loadLayoutAnimation(MainActivity.this, resId);
+        imageRecyclerview.setLayoutAnimation(animation);
+        List<Singer> singers = new ArrayList<>();
+        for (Singer singer : Singer.ITEMS){
+         singers.add(singer);
         }
-        imageAdapter.submitList(songs);
+        imageAdapter.submitList(singers);
         imageAdapter.notifyDataSetChanged();
 
         imageAdapter.setOnItemClickListener(new ImageAdapter.OnItemClickListener() {
             @Override
-            public void onItemClick(Song note,View view) {
+            public void onItemClick(Singer note, View view) {
 
                 Log.d("passanger", "onItemClick: ");
                 Intent intent = new Intent(MainActivity.this, DetailsActivity.class);

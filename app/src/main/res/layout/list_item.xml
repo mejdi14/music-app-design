@@ -92,7 +92,7 @@
         android:id="@+id/favorite"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:padding="29dp"
+        android:padding="32dp"
         android:scaleType="centerCrop"
         android:src="@drawable/hart"
         app:layout_constraintBottom_toBottomOf="parent"

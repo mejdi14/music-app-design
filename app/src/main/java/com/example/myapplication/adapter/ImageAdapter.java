@@ -13,29 +13,29 @@ import androidx.recyclerview.widget.ListAdapter;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.myapplication.R;
-import com.example.myapplication.models.Song;
+import com.example.myapplication.models.Singer;
 
 import java.util.ArrayList;
 import java.util.List;
 
 
-public class ImageAdapter extends ListAdapter<Song, ImageAdapter.NoteHolder> {
+public class ImageAdapter extends ListAdapter<Singer, ImageAdapter.NoteHolder> {
     private OnItemClickListener listener;
-    private List<Song> songs = new ArrayList<>();
+    private List<Singer> singers = new ArrayList<>();
     Bitmap ImageBit;
     float ImageRadius = 40.0f;
     public ImageAdapter() {
         super(DIFF_CALLBACK);
     }
 
-    private static final DiffUtil.ItemCallback<Song> DIFF_CALLBACK = new DiffUtil.ItemCallback<Song>() {
+    private static final DiffUtil.ItemCallback<Singer> DIFF_CALLBACK = new DiffUtil.ItemCallback<Singer>() {
         @Override
-        public boolean areItemsTheSame(Song oldItem, Song newItem) {
+        public boolean areItemsTheSame(Singer oldItem, Singer newItem) {
             return true;
         }
 
         @Override
-        public boolean areContentsTheSame(Song oldItem, Song newItem) {
+        public boolean areContentsTheSame(Singer oldItem, Singer newItem) {
             return true;
         }
     };
@@ -49,19 +49,19 @@ public class ImageAdapter extends ListAdapter<Song, ImageAdapter.NoteHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull NoteHolder holder, int position) {
-        Song currentSong = getItem(position);
-        holder.title.setText(currentSong.getTitle());
-        holder.discription.setText(currentSong.getSubtitle());
-        holder.number.setText(currentSong.getNumber()+"");
+        Singer currentSinger = getItem(position);
+        holder.title.setText(currentSinger.getTitle());
+        holder.discription.setText(currentSinger.getSubtitle());
+        holder.number.setText(currentSinger.getNumber()+"");
 
 
-        holder.image.setImageResource(currentSong.getImage());
+        holder.image.setImageResource(currentSinger.getImage());
     }
 
 
 
 
-    public Song getNoteAt(int position) {
+    public Singer getNoteAt(int position) {
         return getItem(position);
     }
 
@@ -93,7 +93,7 @@ public class ImageAdapter extends ListAdapter<Song, ImageAdapter.NoteHolder> {
     }
 
     public interface OnItemClickListener {
-        void onItemClick(Song note,View view);
+        void onItemClick(Singer note, View view);
     }
 
     public void setOnItemClickListener(OnItemClickListener listener) {
