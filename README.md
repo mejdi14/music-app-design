@@ -1,6 +1,6 @@
 # Music App Design
 
-<img src="/screenshots/video.gif" alt="sample" title="sample" width="320" height="750" align="right" vspace="52" />
+<img src="/images/music.gif" alt="sample" title="sample" width="320" height="750" align="right" vspace="52" />
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Platform](https://img.shields.io/badge/platform-android-green.svg)](http://developer.android.com/index.html)
@@ -15,17 +15,17 @@ Introduction
 
 This project was made to try the following technologies and features:
 
-* [Epoxy](https://github.com/airbnb/epoxy)
-* [ShapeableImageView](https://github.com/material-components/material-components-android)
+* [Shared Transition]
+* [LottieAnimation](https://airbnb.design/lottie/
 * [ConstraintLayout](#documentation)
 * [MotionLayout](#min-sdk)
-* [CicleCI](https://circleci.com/)
+* [githubActions](
 
 
-Created this cool design from [Abdullah Sajol](https://www.uplabs.com/mdabdullahsajol) as an android application. 
+Created this cool design from [Appetiser Apps](https://www.uplabs.com/appetiser) as an android application. 
 
 
-  <img alt="Design on Uplabs" src="/screenshots/preview.jpg" width="500" height="400" />
+  <img alt="Design on Uplabs" src="/images/preview.jpg" width="500" height="400" />
   
   
 LICENCE
