@@ -1,6 +1,5 @@
 # Music App Design
 
-<img src="/images/music.gif" alt="sample" title="sample" width="320" height="600" align="right" vspace="52" />
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Platform](https://img.shields.io/badge/platform-android-green.svg)](http://developer.android.com/index.html)
